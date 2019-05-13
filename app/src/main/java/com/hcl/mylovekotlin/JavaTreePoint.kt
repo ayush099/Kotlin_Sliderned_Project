@@ -17,6 +17,28 @@ fun main(args: Array<String>) {
     Program2()
     Program3()
     Program4()
+
+    //Array Of Nulls
+    Program5()
+}
+
+//Array Of Nulls
+fun Program5()
+{
+    var array = arrayOfNulls<Int>(5)
+
+    array.set(2, 456)
+
+    println("${array.size}")
+
+    for (i in array)
+    {
+        println("${i}")
+    }
+
+    array = emptyArray()
+    println("${array.size}")
+
 }
 
 // Video 5: This is for array tutorial
@@ -33,7 +55,10 @@ fun Program4()
     }
 
 
-    var array= Array(5, {i-> (i*i)})
+    var array= Array<Int>(6, {i-> (i*i)})
+
+    array.set(4, 6)
+    println("${array.size} Ayush")
 
     for (i in array)
     {
@@ -72,5 +97,10 @@ fun Program1()
         println("Deepak Word null")
     }
 }
+
+//-------------------------------------------------------
+
+// Primitive Array
+
 
 
